@@ -140,17 +140,37 @@ header {
   outline: none;
 }
 
-.link-nav {
+.header-nav .link-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--color-2);
   outline: none;
+  position: relative;
+}
+
+.header-nav a.link-nav.selected {
+  color: var(--color-logo);
+}
+
+.header-nav a.link-nav.selected::after {
+  content: "";
+  background-color: var(--color-logo);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 28px);
+  width: 100%;
+  height: 4px;
+
 }
 
 .link-nav:focus,
 .link-nav:hover {
+  color: var(--color-logo);
+}
+
+.selected:active {
   color: var(--color-logo);
 }
 
