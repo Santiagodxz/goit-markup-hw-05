@@ -69,15 +69,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  visibility: visible;
+
   transition: 250ms;
-  transform: scaleY(100%);
+  transform: translateY(0);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -86,7 +88,7 @@ header {
   opacity: 0;
   pointer-events: none;
   transition: 250ms;
-  transform: scaleY(0);
+  transform: translateY(200px);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
